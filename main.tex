@@ -1,0 +1,65 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+% \usetheme{Frankfurt}
+% \usetheme{Darmstadt}
+% \usetheme{Berlin}
+% \usetheme{Warsaw}
+% \usetheme{Berkeley}
+% \usetheme{Bergen}
+% \usetheme{CambridgeUS}
+% \usetheme{Copenhagen}
+
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\newcommand{\mysolution}{\noindent \textbf{Solution: }}
+
+\title{AI1110 - Probability and Random Variables\\
+        Assignment 10}
+\author{Aakash Kamuju (ai21btech11001)}
+\begin{document}
+\maketitle
+    % \begin{frame}{Table of Contents}
+    % \tableofcontents
+    % \end{frame}
+    \begin{frame}{Outline}
+    \tableofcontents
+    \end{frame}
+    \begin{frame}{Question}
+        \begin{section}{Question}
+            \begin{block}{EXAMPLE 8-29}
+  In a two-dimensional random walk.The coordinates x(t) and y(t) of a moving object are two independent random-walk processes with the same s and T.Given a $z(t) = \sqrt{x^2(t) + y^2(t)}$\\
+
+   \end{block}
+    \end{section}
+    \end{frame}
+    \begin{frame}{Question Continued}
+        \begin{section}{Question Continued}
+            \begin{block}{Question Continued}
+            Show that if $z(t) = \sqrt{x^2(t) + y^2(t)}$ is the distance of the object from the origin and $t >> T$, then for z of the order of $\sqrt{\alpha t}$ :  
+$$f_z(z,t) \simeq \frac{z}{\alpha t} e^{\frac{-z^2}{2 \alpha t}}U(z)$$
+where $\alpha = \frac{S^2}{t}$
+        \end{block}
+       \end{section}
+  \end{frame}
+  \begin{frame}
+        \begin{section}{Solution}
+            \begin{block}{Solution}
+            For large t, x(t) and y(t) can be approximated by two independent Wiener processes as in 
+                     
+$$f_x(x,t) = \frac{1}{\sqrt{2 \pi \alpha t}} e^{\frac{-x^2}{2 \alpha t}} $$$$f_y(y,t) = \frac{1}{\sqrt{2 \pi \alpha t}} e^{\frac{-y^2}{2 \alpha t}}$$
+Hence z(t) has a Rayleigh density.The product $f_z(z,t)dz$ equals approximately the probability z(t) is between z and z + dz provided that dz $> >$ T. 
+        \end{block}
+       \end{section}
+  \end{frame}
+  \begin{frame}
+        \begin{section}{Solution Continued}
+            \begin{block}{Solution Continued}
+            Here z(t) is a discrete type RV taking the values$\sqrt{m^2 + n^2}$ where m,n are integers.\\
+            Hence that if $z(t) = \sqrt{x^2(t) + y^2(t)}$ is the distance of the object from the origin and $t >> T$, then z is the order of $\sqrt{\alpha t}$ 
+            and
+$$f_z(z,t) \simeq \frac{z}{\alpha t} e^{\frac{-z^2}{2 \alpha t}}U(z)$$
+where $\alpha = \frac{S^2}{t}$ 
+        \end{block}
+       \end{section}
+  \end{frame}
+   \end{document}
